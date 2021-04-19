@@ -1,8 +1,8 @@
 #Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you
 #cannot use additional data structures? 
 #1.1 CTCI
-#runtime O(n^2)
 
+#runtime O(n^2)
 # def isUnique (s:str):
 #     char = ''
 #     for i in s:
@@ -15,7 +15,7 @@
 #     print(True)
 #     return True
 
-
+#runtime O(nlogn)
 def isUnique (s:str):
     temp = ''.join(sorted(s))
 

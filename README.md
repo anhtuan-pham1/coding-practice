@@ -3,7 +3,7 @@ This is my practice for coding interview. I mainly use Python for coding practic
 
 # Resource
 
-I use [Leetcode](https://leetcode.com/) and [Binarysearch.com](https://binarysearch.com/) to study new languages and practice. 
+I use [Leetcode](https://leetcode.com/), [Binarysearch.com](https://binarysearch.com/), and Cracking the Coding Interview to study new languages and practice. 
 
 
 

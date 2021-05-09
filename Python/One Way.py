@@ -6,6 +6,8 @@
 # pales. pale -> true
 # pale. bale -> true
 # pale. bake -> false
+import unittest
+
 
 def oneWay(s1: str, s2: str):
     s1Index = 0
@@ -29,14 +31,23 @@ def oneWay(s1: str, s2: str):
             elif len(s1) < len(s2):
                 s2Index += 1
         else:
-            print(False)
             return False
-
-    print(True)
     return True
 
 
-oneWay('pales', 'paless')
-oneWay('pale', 'pIe')
-oneWay('pale', 'bale')
-oneWay('pale', 'bake')
+class Test(unittest.TestCase):
+    # str1, str2, is_permutation
+    test_cases = (
+        ('pales', 'paless', True),
+        ('pale', 'pIe', False),
+        ('pale', 'bale', True),
+        ('pale', 'bake', False)
+    )
+
+    def test_one_way(self):
+        for str1, str2, expected in self.test_cases:
+            assert oneWay(str1, str2) == expected
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -5,8 +5,9 @@
 # EXAMPLE
 # Input: "Mr John Smith "J 13
 # Output: "Mr%20John%20Smith"
+# CTCI: 1.3
 
-def URLify(s:str):
+def URLify(s: str):
     res = ''
     for i in s:
         if i == ' ':
@@ -15,6 +16,6 @@ def URLify(s:str):
 
     print(res)
     return res
-        
-URLify("Mr John Smith")           
 
+
+URLify("Mr John Smith")
